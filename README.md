@@ -1,0 +1,1 @@
+# camping-predict.mich.sh
