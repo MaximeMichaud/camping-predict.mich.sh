@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+
+<title>Camping predict : Satistiques</title>		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design.css" />
+		<script type="text/javascript" src="javascript/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="javascript/javascript.js"></script>
+		<link rel="icon" type="image/png" href="images/r_cmplst.gif" />
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="./images/r_cmplst.gif" /><![endif]-->
+
+	</head>
+<body>
+<div id="en_tete">
+	<h1>Camping predict</h1>
+</div>
+<div id="menu">        
+	<div class="element_menu">
+		<h3 id="joueur"><div>Joueur</div></h3>		
+		<ul>
+			<li><a href="https://twinoid.com/oauth/auth?response_type=code&amp;client_id=53&amp;redirect_uri=http://www.camping-predict.nadazone.fr/&amp;scope=www.hordes.fr&amp;state=TRUE&amp;access_type=offline">Connexion</a></li>			<li><a href="index-2.html">Accueil</a></li>
+			<li><a href="stat.html">Statistiques</a></li>
+			<li><a href="aide.html">Aide</a></li>
+		</ul>
+	</div>
+</div><div id="corps">
+<script type='text/javascript' src='javascript/Highcharts-2.3.3/js/highcharts.js'></script>
+<script type='text/javascript' src='javascript/make_graphe.js'></script>
+<h2>Statistiques</h2>
+
+
+<h3>Bâtiments<sup>*</sup></h3>
+<span class="*"><sup>*</sup>Certaines données proviennent de BigBroth'Hordes et de Patamap.</span><br/><br/>
+
+
+<div id="1km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Maison d'un c.", color: "#666666", y: 22820}
+);
+
+plotStatBat(colors, data, 1);
+</script>
+
+<div id="2km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Petite maison", color: "#66BBBB", y: 8204},{name: "Ambulance", color: "#00BB00", y: 4230},{name: "Camion en p.", color: "#BB0000", y: 4180},{name: "Cache de contr.", color: "#007777", y: 4178},{name: "Labo. c.", color: "#555555", y: 4141},{name: "Entrepôt d.", color: "#777777", y: 4128},{name: "Maison d'un c.", color: "#666666", y: 2708},{name: "P. bois obscur", color: "#BBBBBB", y: 1620}
+);
+
+plotStatBat(colors, data, 2);
+</script>
+
+<div id="3km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "V. Pompe Hyd.", color: "#555500", y: 6245},{name: "Parking d.", color: "#660000", y: 5268},{name: "Villa délabrée", color: "#550055", y: 5250},{name: "Carcasses de v.", color: "#BB6666", y: 5193},{name: "Cimetière i.", color: "#0000BB", y: 2612},{name: "Ecole mat. b.", color: "#000066", y: 2587},{name: "Kebab « C. C. »", color: "#5555AA", y: 2427},{name: "Petite maison", color: "#66BBBB", y: 1795},{name: "Maison d'un c.", color: "#666666", y: 1689},{name: "Caveau familial", color: "#770000", y: 1046},{name: "Carrière e.", color: "#000077", y: 1037},{name: "Caverne", color: "#AAAAAA", y: 1010},{name: "Cache de contr.", color: "#007777", y: 905},{name: "Ambulance", color: "#00BB00", y: 878},{name: "Labo. c.", color: "#555555", y: 862},{name: "Camion en p.", color: "#BB0000", y: 854},{name: "Entrepôt d.", color: "#777777", y: 814},{name: "P. bois obscur", color: "#BBBBBB", y: 348}
+);
+
+plotStatBat(colors, data, 3);
+</script>
+
+<div id="4km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Pharmacie d.", color: "#666600", y: 8231},{name: "Supermarché p.", color: "#005555", y: 8230},{name: "Chantier à l'ab.", color: "#006600", y: 8164},{name: "Meubles Kiela", color: "#00BBBB", y: 4079},{name: "V. Pompe Hyd.", color: "#555500", y: 3297},{name: "Carcasses de v.", color: "#BB6666", y: 2751},{name: "Parking d.", color: "#660000", y: 2749},{name: "Maison d'un c.", color: "#666666", y: 2735},{name: "Villa délabrée", color: "#550055", y: 2708},{name: "Petite maison", color: "#66BBBB", y: 2640},{name: "Carlingue d'av.", color: "#000055", y: 2509},{name: "Ancien Velib", color: "#AAAA55", y: 2443},{name: "Parc à l'ab.", color: "#007700", y: 1581},{name: "Kebab « C. C. »", color: "#5555AA", y: 1415},{name: "Ambulance", color: "#00BB00", y: 1390},{name: "Cimetière i.", color: "#0000BB", y: 1387},{name: "Cache de contr.", color: "#007777", y: 1359},{name: "Labo. c.", color: "#555555", y: 1352},{name: "Camion en p.", color: "#BB0000", y: 1348},{name: "Entrepôt d.", color: "#777777", y: 1332},{name: "Ecole mat. b.", color: "#000066", y: 1302},{name: "Route barrée", color: "#777700", y: 785},{name: "Caveau familial", color: "#770000", y: 566},{name: "Caverne", color: "#AAAAAA", y: 563},{name: "P. bois obscur", color: "#BBBBBB", y: 538},{name: "Carrière e.", color: "#000077", y: 528}
+);
+
+plotStatBat(colors, data, 4);
+</script>
+
+<div id="5km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Centrale hyd.", color: "#AA5555", y: 5265},{name: "Bar miteux", color: "#6666BB", y: 5232},{name: "BricoTout", color: "#006666", y: 5064},{name: "Tranchée am.", color: "#770077", y: 2635},{name: "Stand de f. f.", color: "#BB66BB", y: 2544},{name: "V. Pompe Hyd.", color: "#555500", y: 2055},{name: "Pharmacie d.", color: "#666600", y: 1786},{name: "Villa délabrée", color: "#550055", y: 1772},{name: "Supermarché p.", color: "#005555", y: 1755},{name: "Parking d.", color: "#660000", y: 1744},{name: "Carcasses de v.", color: "#BB6666", y: 1732},{name: "Chantier à l'ab.", color: "#006600", y: 1711},{name: "Petite maison", color: "#66BBBB", y: 1708},{name: "Armurerie G.'N'Z.", color: "#55AA55", y: 1547},{name: "Ambulance", color: "#00BB00", y: 886},{name: "Labo. c.", color: "#555555", y: 885},{name: "Meubles Kiela", color: "#00BBBB", y: 884},{name: "Ecole mat. b.", color: "#000066", y: 876},{name: "Cache de contr.", color: "#007777", y: 868},{name: "Camion en p.", color: "#BB0000", y: 856},{name: "Cimetière i.", color: "#0000BB", y: 854},{name: "Entrepôt d.", color: "#777777", y: 846},{name: "Kebab « C. C. »", color: "#5555AA", y: 825},{name: "Ancien Velib", color: "#AAAA55", y: 527},{name: "Carlingue d'av.", color: "#000055", y: 523},{name: "Carrière e.", color: "#000077", y: 373},{name: "P. bois obscur", color: "#BBBBBB", y: 353},{name: "Caverne", color: "#AAAAAA", y: 344},{name: "Caveau familial", color: "#770000", y: 333},{name: "Parc à l'ab.", color: "#007700", y: 325},{name: "Route barrée", color: "#777700", y: 177}
+);
+
+plotStatBat(colors, data, 5);
+</script>
+
+<div id="6km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "A. commissariat", color: "#66BB66", y: 5172},{name: "Epicerie Fargo", color: "#BBBBBB", y: 5146},{name: "Fast-food", color: "#660066", y: 5133},{name: "Cabane de j.", color: "#000088", y: 5132},{name: "Abri de chantier", color: "#008800", y: 3713},{name: "Atomic' Café", color: "#BBBB00", y: 2590},{name: "V. Pompe Hyd.", color: "#555500", y: 2090},{name: "Supermarché p.", color: "#005555", y: 1778},{name: "Parking d.", color: "#660000", y: 1765},{name: "Bar miteux", color: "#6666BB", y: 1743},{name: "BricoTout", color: "#006666", y: 1741},{name: "Chantier à l'ab.", color: "#006600", y: 1727},{name: "Villa délabrée", color: "#550055", y: 1722},{name: "Carcasses de v.", color: "#BB6666", y: 1716},{name: "Pharmacie d.", color: "#666600", y: 1716},{name: "Centrale hyd.", color: "#AA5555", y: 1675},{name: "Bibli. de q.", color: "#888800", y: 1594},{name: "Kebab « C. C. »", color: "#5555AA", y: 894},{name: "Ecole mat. b.", color: "#000066", y: 877},{name: "Cimetière i.", color: "#0000BB", y: 873},{name: "Tranchée am.", color: "#770077", y: 867},{name: "Meubles Kiela", color: "#00BBBB", y: 864},{name: "Stand de f. f.", color: "#BB66BB", y: 821},{name: "Carlingue d'av.", color: "#000055", y: 515},{name: "Ancien Velib", color: "#AAAA55", y: 509},{name: "Armurerie G.'N'Z.", color: "#55AA55", y: 500},{name: "Parc à l'ab.", color: "#007700", y: 369},{name: "Caverne", color: "#AAAAAA", y: 366},{name: "Caveau familial", color: "#770000", y: 327},{name: "Carrière e.", color: "#000077", y: 320},{name: "Route barrée", color: "#777700", y: 191}
+);
+
+plotStatBat(colors, data, 6);
+</script>
+
+<div id="7km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Chantier à l'ab.", color: "#006600", y: 2476},{name: "Bar miteux", color: "#6666BB", y: 2472},{name: "Pharmacie d.", color: "#666600", y: 2452},{name: "Centrale hyd.", color: "#AA5555", y: 2445},{name: "Fast-food", color: "#660066", y: 2403},{name: "Supermarché p.", color: "#005555", y: 2390},{name: "Epicerie Fargo", color: "#BBBBBB", y: 2371},{name: "A. commissariat", color: "#66BB66", y: 2341},{name: "Cabane de j.", color: "#000088", y: 2324},{name: "BricoTout", color: "#006666", y: 2310},{name: "Abri de chantier", color: "#008800", y: 1788},{name: "Meubles Kiela", color: "#00BBBB", y: 1236},{name: "Stand de f. f.", color: "#BB66BB", y: 1226},{name: "Atomic' Café", color: "#BBBB00", y: 1201},{name: "Tranchée am.", color: "#770077", y: 1196},{name: "Ancien Velib", color: "#AAAA55", y: 735},{name: "Carlingue d'av.", color: "#000055", y: 726},{name: "Armurerie G.'N'Z.", color: "#55AA55", y: 717},{name: "Bibli. de q.", color: "#888800", y: 690},{name: "Parc à l'ab.", color: "#007700", y: 462},{name: "Route barrée", color: "#777700", y: 218}
+);
+
+plotStatBat(colors, data, 7);
+</script>
+
+<div id="8km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Mini-market", color: "#880000", y: 5071},{name: "Silos à l'ab.", color: "#BB00BB", y: 2591},{name: "Relais auto.", color: "#009999", y: 2529},{name: "BricoTout", color: "#006666", y: 1716},{name: "Cabane de j.", color: "#000088", y: 1712},{name: "Epicerie Fargo", color: "#BBBBBB", y: 1704},{name: "A. commissariat", color: "#66BB66", y: 1689},{name: "Bar miteux", color: "#6666BB", y: 1688},{name: "Fast-food", color: "#660066", y: 1685},{name: "Centrale hyd.", color: "#AA5555", y: 1651},{name: "Abri de chantier", color: "#008800", y: 1188},{name: "Bureau de poste", color: "#880088", y: 1106},{name: "Stand de f. f.", color: "#BB66BB", y: 872},{name: "Tranchée am.", color: "#770077", y: 848},{name: "Atomic' Café", color: "#BBBB00", y: 844},{name: "Bibli. de q.", color: "#888800", y: 519},{name: "Armurerie G.'N'Z.", color: "#55AA55", y: 511}
+);
+
+plotStatBat(colors, data, 8);
+</script>
+
+<div id="9km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "A. commissariat", color: "#66BB66", y: 3398},{name: "Mini-market", color: "#880000", y: 3306},{name: "Cabane de j.", color: "#000088", y: 3244},{name: "Epicerie Fargo", color: "#BBBBBB", y: 3228},{name: "Fast-food", color: "#660066", y: 3208},{name: "Abri de chantier", color: "#008800", y: 2323},{name: "Relais auto.", color: "#009999", y: 1644},{name: "Atomic' Café", color: "#BBBB00", y: 1611},{name: "Silos à l'ab.", color: "#BB00BB", y: 1567},{name: "Bibli. de q.", color: "#888800", y: 1029},{name: "Bureau de poste", color: "#880088", y: 700}
+);
+
+plotStatBat(colors, data, 9);
+</script>
+
+<div id="10km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Immeuble d.", color: "#AA0000", y: 3411},{name: "Abri. a.-a.", color: "#BBBB66", y: 3403},{name: "Gare de tr. d.", color: "#AA00AA", y: 3365},{name: "Mini-market", color: "#880000", y: 2270},{name: "Relais auto.", color: "#009999", y: 1172},{name: "Silos à l'ab.", color: "#BB00BB", y: 1158},{name: "Bureau de poste", color: "#880088", y: 431}
+);
+
+plotStatBat(colors, data, 10);
+</script>
+
+<div id="11km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Mini-market", color: "#880000", y: 2171},{name: "Gare de tr. d.", color: "#AA00AA", y: 1138},{name: "Abri. a.-a.", color: "#BBBB66", y: 1137},{name: "Silos à l'ab.", color: "#BB00BB", y: 1109},{name: "Immeuble d.", color: "#AA0000", y: 1094},{name: "Relais auto.", color: "#009999", y: 1089},{name: "Bureau de poste", color: "#880088", y: 421}
+);
+
+plotStatBat(colors, data, 11);
+</script>
+
+<div id="12km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Mine effondrée", color: "#AAAA00", y: 1300},{name: "Motel « Dusk »", color: "#0000AA", y: 1213},{name: "Tente d'un c.", color: "#00AA00", y: 763},{name: "Villa de Duke", color: "#AA55AA", y: 514},{name: "A. aérodrome", color: "#888888", y: 506},{name: "Immeuble d.", color: "#AA0000", y: 446},{name: "Abri. a.-a.", color: "#BBBB66", y: 435},{name: "Gare de tr. d.", color: "#AA00AA", y: 423}
+);
+
+plotStatBat(colors, data, 12);
+</script>
+
+<div id="13km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Motel « Dusk »", color: "#0000AA", y: 859},{name: "Abri. a.-a.", color: "#BBBB66", y: 835},{name: "Immeuble d.", color: "#AA0000", y: 814},{name: "Gare de tr. d.", color: "#AA00AA", y: 800},{name: "Mine effondrée", color: "#AAAA00", y: 783},{name: "Tente d'un c.", color: "#00AA00", y: 475},{name: "Villa de Duke", color: "#AA55AA", y: 345},{name: "A. aérodrome", color: "#888888", y: 325}
+);
+
+plotStatBat(colors, data, 13);
+</script>
+
+<div id="14km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Motel « Dusk »", color: "#0000AA", y: 1199},{name: "Mine effondrée", color: "#AAAA00", y: 1165},{name: "Tente d'un c.", color: "#00AA00", y: 687},{name: "Villa de Duke", color: "#AA55AA", y: 471},{name: "A. aérodrome", color: "#888888", y: 454}
+);
+
+plotStatBat(colors, data, 14);
+</script>
+
+<div id="15km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Hangars de st.", color: "#008888", y: 1455},{name: "Mine effondrée", color: "#AAAA00", y: 528},{name: "Motel « Dusk »", color: "#0000AA", y: 467},{name: "Tente d'un c.", color: "#00AA00", y: 277},{name: "A. aérodrome", color: "#888888", y: 196},{name: "Villa de Duke", color: "#AA55AA", y: 195}
+);
+
+plotStatBat(colors, data, 15);
+</script>
+
+<div id="16km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Avant-poste m.", color: "#AAAAAA", y: 973},{name: "Caverne a. hab.", color: "#009900", y: 954},{name: "V. hôpital de c.", color: "#00AAAA", y: 877},{name: "Camion « m.-m. »", color: "#990000", y: 398},{name: "Hangars de st.", color: "#008888", y: 297}
+);
+
+plotStatBat(colors, data, 16);
+</script>
+
+<div id="17km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Puits ab.", color: "#990099", y: 813},{name: "Avant-poste m.", color: "#AAAAAA", y: 493},{name: "Caverne a. hab.", color: "#009900", y: 480},{name: "Hangars de st.", color: "#008888", y: 455},{name: "V. hôpital de c.", color: "#00AAAA", y: 446},{name: "Camion « m.-m. »", color: "#990000", y: 219}
+);
+
+plotStatBat(colors, data, 17);
+</script>
+
+<div id="18km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "V. hôpital de c.", color: "#00AAAA", y: 790},{name: "Avant-poste m.", color: "#AAAAAA", y: 760},{name: "Caverne a. hab.", color: "#009900", y: 736},{name: "Hangars de st.", color: "#008888", y: 693},{name: "Puits ab.", color: "#990099", y: 457},{name: "Camion « m.-m. »", color: "#990000", y: 315}
+);
+
+plotStatBat(colors, data, 18);
+</script>
+
+<div id="19km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Caverne a. hab.", color: "#009900", y: 705},{name: "Avant-poste m.", color: "#AAAAAA", y: 701},{name: "V. hôpital de c.", color: "#00AAAA", y: 637},{name: "Puits ab.", color: "#990099", y: 419},{name: "Camion « m.-m. »", color: "#990000", y: 273}
+);
+
+plotStatBat(colors, data, 19);
+</script>
+
+<div id="20km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Puits ab.", color: "#990099", y: 1635}
+);
+
+plotStatBat(colors, data, 20);
+</script>
+
+<div id="21km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Char d'a. en p.", color: "#000099", y: 964},{name: "Le bar des i. p.", color: "#999999", y: 384},{name: "Un é. appareil c.", color: "#999900", y: 204}
+);
+
+plotStatBat(colors, data, 21);
+</script>
+
+<div id="22km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Char d'a. en p.", color: "#000099", y: 414},{name: "Le bar des i. p.", color: "#999999", y: 180},{name: "Un é. appareil c.", color: "#999900", y: 93}
+);
+
+plotStatBat(colors, data, 22);
+</script>
+
+<div id="23km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Char d'a. en p.", color: "#000099", y: 323},{name: "Le bar des i. p.", color: "#999999", y: 124},{name: "Un é. appareil c.", color: "#999900", y: 56}
+);
+
+plotStatBat(colors, data, 23);
+</script>
+
+<div id="24km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Char d'a. en p.", color: "#000099", y: 118},{name: "Le bar des i. p.", color: "#999999", y: 44},{name: "Un é. appareil c.", color: "#999900", y: 21}
+);
+
+plotStatBat(colors, data, 24);
+</script>
+
+<div id="25km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Char d'a. en p.", color: "#000099", y: 69},{name: "Le bar des i. p.", color: "#999999", y: 29},{name: "Un é. appareil c.", color: "#999900", y: 11}
+);
+
+plotStatBat(colors, data, 25);
+</script>
+
+<div id="26km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Char d'a. en p.", color: "#000099", y: 18},{name: "Le bar des i. p.", color: "#999999", y: 12},{name: "Un é. appareil c.", color: "#999900", y: 4}
+);
+
+plotStatBat(colors, data, 26);
+</script>
+
+<div id="27km" class="left"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Char d'a. en p.", color: "#000099", y: 5},{name: "Le bar des i. p.", color: "#999999", y: 2},{name: "Un é. appareil c.", color: "#999900", y: 2}
+);
+
+plotStatBat(colors, data, 27);
+</script>
+
+<div id="28km" class="right"></div>			
+<script type="text/javascript">
+
+var data = new Array(		
+			
+{name: "Le bar des i. p.", color: "#999999", y: 1}
+);
+
+plotStatBat(colors, data, 28);
+</script>
+
+<h3>Simultateur de fréquence des bâtiments en fonction du type de carte</h3>
+
+<form action="#" id="simuBatForm" autocomplete="off">
+	<fieldset>
+		<input type="radio" name="ville" id="re" value="0" /><label for="re">RE</label>
+		<input type="radio" name="ville" id="rne" value="1" /><label for="rne">RNE</label>
+		<input type="radio" name="ville" id="pande" value="2" /><label for="pande">Pandémonium</label><br/>
+		<label for="size">Taille de la map : </label><input type="text" id="size" maxlength="2" /><br/>
+		<label for="xmin">x min : </label><input type="text" id="xmin" maxlength="3" /><br/>
+		<label for="ymax">y max : </label><input type="text" id="ymax" maxlength="2" /><br/>
+		<input type="button" value="Simuler" onclick="plotSimuBat();"/>
+	</fieldset>
+</form><br/>
+
+<div id="simuBat"></div>
+
+</div>
+
+<div id="pied_de_page">
+	Camping predict est un site d'aide au jeu Hordes de la Motion Twin developpé par <a href="http://twinoid.com/user/19935" target="_blank">Sirios</a> et hébergé par <a href="http://twinoid.com/user/430289" target="_blank">Nadawoo</a>. Version v1.1 (28/01/2018). Le topic de discussion officiel est <a href="http://muxxu.com/tid/forum#!view/61824|thread/22048945" target="_blank">ici</a>. Camping predict n'est pas affilié à la Motion Twin. Certains éléments appartiennent à la Motion Twin.
+
+<!--Ancienne version : 14/01/2014--></div>
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+
+<title>Camping predict : Aide</title>		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design.css" />
+		<script type="text/javascript" src="javascript/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="javascript/javascript.js"></script>
+		<link rel="icon" type="image/png" href="images/r_cmplst.gif" />
+		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="./images/r_cmplst.gif" /><![endif]-->
+
+	</head>
+<body>
+<div id="en_tete">
+	<h1>Camping predict</h1>
+</div>
+<div id="menu">        
+	<div class="element_menu">
+		<h3 id="joueur"><div>Joueur</div></h3>		
+		<ul>
+			<li><a href="https://twinoid.com/oauth/auth?response_type=code&amp;client_id=53&amp;redirect_uri=http://www.camping-predict.nadazone.fr/&amp;scope=www.hordes.fr&amp;state=TRUE&amp;access_type=offline">Connexion</a></li>			<li><a href="index-2.html">Accueil</a></li>
+			<li><a href="stat.html">Statistiques</a></li>
+			<li><a href="aide.html">Aide</a></li>
+		</ul>
+	</div>
+</div>
+<div id="corps">
+<h2>Page "Accueil"</h2>
+
+<div class="image_aide" id="image_aide1">
+	<img src="images/aide_cp3.png" width="700px" />
+</div><br/>
+<div class="text_aide" id="text_aide1">
+	1. <b>Type de ville</b> : <i>région éloigné (RE)</i>, <i>région non-éloignée (RNE)</i> ou <i>pandémonium</i>.
+	Les villes en pandémonium ont un malus constant de camping par rapport aux RE et RNE.<br/><br/>
+	
+	2. <b>Type de métier</b> : <i>habitant</i>, <i>fouineur</i>, <i>gardien</i>, <i>apprivoiseur</i> et <i>technicien</i> sont équivalents et ne bénéficient d'aucun bonus de camping.
+	<i>Ermite</i> permet de débloquer des chances de survies suppérieures à tous les autres métiers avec les statuts "élevé" et "optimal". 
+	<i>Eclaireur</i> permet de réduire le malus subit par la présence de zombies lorsqu'il est en mode furtif (voir <i>point 14</i>).<br/><br/>
+	
+	3. <b>Nombre de km de la ville</b> : visible lorsque vous êtes dans l'outre monde en-dessous de la minimap :<br/> <img src="images/aide_cp2.png" width="25%" />
+	<br/>Cette distance permet d'apporter un bonus de camping. De manière générale, plus vous êtes éloignés de la ville, plus ce bonus est 
+	grand. Notez qu'il existe des palliers où ce bonus n'évolue pas.<br/><br/>
+	
+	4. <b>Type de bâtiment</b> : de manière générale, les bâtiments donnent un bonus de camping. Ils sont sélectionnables sur <i>camping predict</i> 
+	en fonction des distances auxquelles ils apparaissent. La liste complète des bâtiments n'apparaît donc jamais dans le menu déroulant.<br/><br/>
+	
+	5. <b>Nombre de zombies</b> : les zombies présents sur la case de camping infligent un malus. Ce malus peut être diminué si vous êtes éclaireur et 
+	que le mode furtif est actif (voir <i>point 14</i>).<br/><br/>
+	
+	6. <b>Nombre d'aménagements "classiques"</b> : le nombre d'aménagements "classiques" correspond au nombre de fois que vous effectuez l'action "Améliorer un peu le campement (bonus permanent faible, 1 PA)", 
+	après avoir cliqué sur "Inspecter le secteur" qui se trouve à droite de la minimap lorsque vous vous trouvez dans l'outre monde. 
+	Il faut savoir qu'il est impossible d'effectuer d'autres aménagements lorsque leur total est égal ou suppérieur à 10 (voir <i>point 7</i> pour 
+	dépasser les 10 aménagements) et que ce bonus est commun à tous les citoyens se trouvant sur la case. Il est également important de penser à décompter 
+	3 aménagements par attaque de la horde (phénomène qui se produit tous les jours jusqu'à ce que la case soit retombée à zéro aménagement). 
+	Pour ceux qui comprennent bien le fonctionnement des campings, il est possible d'encoder directement un nombre à virgule en utilisant le "." 
+	pour séparer les unités des décimales.<br/><br/>
+	
+	7. <b>Nombre d'aménagements avec OD</b> : il est possible d'aménager une case de l'outre monde avec certains objets de défense (OD) : <i>porte</i>, <i>tréteau</i>, <i>matelas</i>, <i>plaques de bois solide</i>, 
+	<i>plaque de tôle</i> et <i>table Järpen</i> pour 1 PA par OD. Notez que le <i>contre-plaqué</i>, qui n'est pas un OD, permet également d'aménager le campement en fournissant le même effet qu'un des OD précédemment cité. 
+	Pour réaliser cette action, rendez-vous dans "Utiliser un objet de mon sac" et installez ensuite l'objet de défense 
+	désiré. Ces OD permettent d'apporter un bonus de 0.8 aménagement par rapport à un aménagement classique. 
+	Un OD ajoute donc 1.8 aménagements qui doivent être pris en compte lors du calcul du nombre d'aménagements. Grâce à cette décimale, il est possible 
+	d'amener la zone à un maximum de 11.6 aménagements en commençant par aménager 9.8 fois la zone avec 8 aménagements classiques et 1 OD, dans l'ordre que 
+	vous souhaitez, pour terminer par aménager la zone une dernière fois avec un OD et ainsi arriver à 11.6. Dans ce cas, au niveau de l'application, vous pouvez 
+	soit encoder 8 aménagements classiques et 2 OD, soit encoder directement 11.6 aménagements classiques si vous êtes à l'aise avec les campings.<br/><br/>
+	
+	8. <b>Nombre de campings déjà effectués</b> : correspond au nombre de campings que vous avez réalisés depuis le début de votre ville en cours. 
+	Les campings à répétition infligent un malus croissant de camping qui peut être réduit par la pouvoir héros <i>campeur professionnel</i> (voir <i>point 15</i>).<br/><br/>
+	
+	9. <b>Nombre de campeurs déjà enterrés</b> : correspond au nombre de citoyens qui se sont déjà cachés ou enterrés avant vous. De manière générale, plus le nombre 
+	de campeurs enterrés est grand, plus le malus de camping est élevé.<br/><br/>
+	
+	10. <b>Nombre de pelures de peau portées</b> : les pelures de peau donnent un bonus lorsqu'elles se trouvent dans votre sac.<br/><br/>
+	
+	11. <b>Nombre de toiles de tente portées </b> : idem <i>point 10</i>.<br/><br/>
+	
+	12. <b>Tombe creusée</b> : lorsque la tombe est creusée en allant dans "Inspecter le secteur" suivi de "Creuser une 'tombe' (bonus temporaire moyen, 1 PA)", 
+	celle-ci apporte un bonus individuel de camping.<br/><br/>
+	
+	13. <b>Nuit</b> : de 19 h à 7 h, la nuit tombe sur Hordes apportant un bonus de camping.<br/><br/>
+	
+	14. <b>Mode furtif</b> : le mode furtif apparaît dans l'application lorsque votre métier est éclaireur. Ce mode, lorsqu'il est actif, permet de 
+	diminuer le malus apporté par les zombies présents sur votre case de camping.<br/><br/>
+	
+	15. <b>Campeur professionnel</b> : <i>campeur pro</i> est un pouvoir héros débloqué après l'accumulation de 301 jours héros. Ce pouvoir permet de diminuer 
+	le malus provoqué par les camping à répétition.<br/><br/>
+	
+	16. <b>Phare</b> :  le phare est un bâtiment qui, lorsqu'il est construit, donne un bonus de camping dans tout l'outre monde.<br/><br/>
+	
+	17. <b>Ville dévastée</b> :  la ville est dévastée lorsque tous les citoyens survivants campent hors de ses murs OU sont tous tués en ville. Ce statut apporte un malus important en camping.<br/><br/>
+	
+	18. <b>Importer</b> : "Importer" est un bouton qui apparait lorsque vous êtes connecté sur <i>camping predict</i>. Ce bouton permet d'importer certaines données nécessaires à la simulation du statut 
+	de camping (via l'API json). Attention, toutes les données ne sont pas présentes dans l'API json, il est donc nécessaire de complèter manuellement les données manquantes (voir <i>point 23</i>).<br/><br/>
+	
+	19. <b>Statut de survie</b> : indique le statut simulé de survie à partir de ce que vous avez encodé. Le plafond étant indiqué par "optimal" pour 
+	les ermites et "correct max" pour tous les autres métier.<br/><br/>
+	
+	20. <b>Nombre d'aménagement avant le max</b> : indique le nombre d'aménagement manquant pour arriver au maximum indépassable. Pour les ermites, 
+	ces aménagements sont calculé par rapport au statut "optimal" et au statut "correct max" pour tous les autres métier.<br/><br/>
+	
+	21. <b>Url de la simulation</b> : L'url de la simulation permet de générer un lien afin de partager votre simulation avec d'autres joueurs.<br/><br/>
+	
+	22. <b>Signaler une erreur</b> : lorsque les données simulées ne correspondent pas à la réalité, vous pouvez imformer de cette erreur 
+	en remplissant le mini formulaire qui s'ouvrira.<br/><br/>
+	
+	23. <b>Box "Légende", "X" & "V"</b> : la box "Légende", les "X" et les "V" apparaissent lorsque vous utilisez le bouton "Importer' (voir <i>point 18</i>).	
+	Les "X" et les "V" indiquent les informations qui ont pu être extraites ou non. Lorsque vous modifiez le champ correspondant, 
+	cette information disparaît afin d'avoir une vue globale de ce qui a été modifié.
+	<br/><br/>
+	
+	24. <b>RàZ</b> : ce bouton signifie "remise à zéro". Il permet simplement de réinitialiser tous les champs du formulaire.
+</div>
+
+</div>
+
+<div id="pied_de_page">
+	Camping predict est un site d'aide au jeu Hordes de la Motion Twin developpé par <a href="http://twinoid.com/user/19935" target="_blank">Sirios</a> et hébergé par <a href="http://twinoid.com/user/430289" target="_blank">Nadawoo</a>. Version v1.1 (28/01/2018). Le topic de discussion officiel est <a href="http://muxxu.com/tid/forum#!view/61824|thread/22048945" target="_blank">ici</a>. Camping predict n'est pas affilié à la Motion Twin. Certains éléments appartiennent à la Motion Twin.
+
+<!--Ancienne version : 14/01/2014--></div>
+
+
+</body>
+</html>
+
