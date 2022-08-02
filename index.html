@@ -2,140 +2,198 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
 <head>
 
-<title>Camping predict : Accueil</title>		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design.css" />
-		<script type="text/javascript" src="javascript/jquery-1.5.1.min.js"></script>
-		<script type="text/javascript" src="javascript/javascript.js"></script>
-		<link rel="icon" type="image/png" href="images/r_cmplst.gif" />
-		<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="./images/r_cmplst.gif" /><![endif]-->
+    <title>Camping predict : Accueil</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design.css"/>
+    <script type="text/javascript" src="javascript/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="javascript/javascript.js"></script>
+    <link rel="icon" type="image/png" href="images/r_cmplst.gif"/>
+    <!--[if IE]>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/r_cmplst.gif"/><![endif]-->
 
-	</head>
+</head>
 <body>
 <div id="en_tete">
-	<h1>Camping predict</h1>
+    <h1>Camping predict</h1>
 </div>
-<div id="menu">        
-	<div class="element_menu">
-		<h3 id="joueur"><div>Joueur</div></h3>		
-		<ul>
-			<li><a href="https://twinoid.com/oauth/auth?response_type=code&amp;client_id=53&amp;redirect_uri=http://www.camping-predict.nadazone.fr/&amp;scope=www.hordes.fr&amp;state=TRUE&amp;access_type=offline">Connexion</a></li>			<li><a href="index-2.html">Accueil</a></li>
-			<li><a href="stat.html">Statistiques</a></li>
-			<li><a href="aide.html">Aide</a></li>
-		</ul>
-	</div>
+<div id="menu">
+    <div class="element_menu">
+        <h3 id="joueur">
+            <div>Joueur</div>
+        </h3>
+        <ul>
+            <li>
+                <a href="https://twinoid.com/oauth/auth?response_type=code&amp;client_id=53&amp;redirect_uri=http://www.camping-predict.nadazone.fr/&amp;scope=www.hordes.fr&amp;state=TRUE&amp;access_type=offline">Connexion</a>
+            </li>
+            <li><a href="index-2.html">Accueil</a></li>
+            <li><a href="stat.html">Statistiques</a></li>
+            <li><a href="aide.html">Aide</a></li>
+        </ul>
+    </div>
 </div>
 <div id="corps">
-			<h2>Prédicteur du statut de survie en camping sur Hordes</h2>
-			
-			<form action="#" id="data" autocomplete="off">
-				
-				<div id="legendImport">
-					<u>Légende</u><br/>
-					<b style="color:#851717;">X</b> : donnée indisponible<br/>
-					<b style="color:#A2B154;">V</b> : donnée chargée avec succès
-				</div>
-				
-				<div id="correction">
-					<input type="checkbox" id="s14" onchange="calc();" /><label for="s14"> Correction saison 14</label>
-				</div><br/>
-				
-				<img src="images/r_explor.gif" /> Type de ville : 
-				<input type="radio" name="ville" id="re" value="0" checked onchange="calc(); clearXmlImportResult('xmlImportResult1');" /><label for="re">RE</label>
-				<input type="radio" name="ville" id="rne" value="1" onchange="calc(); clearXmlImportResult('xmlImportResult1');" /><label for="rne">RNE</label>
-				<input type="radio" name="ville" id="pande" value="2" onchange="calc(); clearXmlImportResult('xmlImportResult1');" /><label for="pande">Pandémonium</label>
-				<span class="xmlImportResult" id="xmlImportResult1"></span><span class="error" id="error1"></span><br/>
-				
-				<img src="images/small_hero.gif" /> Type de métier : 
-				<input type="radio" name="metier" id="habitant" value="0" checked onchange="displayOption(); clearXmlImportResult('xmlImportResult2');" /><label for="habitant"><img src="images/item_basic_suit.gif" />/<img src="images/item_pelle.gif" />/
-				<img src="images/item_shield.gif" />/<img src="images/item_tamed_pet.gif" />/<img src="images/item_keymol.gif" /></label>
-				<input type="radio" name="metier" id="ermite" value="1" onchange="displayOption(); clearXmlImportResult('xmlImportResult2');" /><label for="ermite"><img src="images/item_surv_book.gif" /></label>
-				<input type="radio" name="metier" id="eclaireur" value="2" onchange="displayOption(); clearXmlImportResult('xmlImportResult2');" /><label for="eclaireur"><img src="images/item_vest_on.gif" /></label>
-				<span class="xmlImportResult" id="xmlImportResult2"></span><span class="error" id="error2"></span><br/><br/>
-				
-				<label for="km"><img src="images/item_tagger.gif" /> Nombre de km de la ville : <input type="text" id="km" value="1" maxlength="2" onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');" /></label>
-				<span class="xmlImportResult" id="xmlImportResult3"></span><span class="error" id="error3"></span><br/>
-				
-				<label for="batiment"><img src="images/r_digger.gif" /> Type de batiment : </label>
-				<select name="batiment" id="batiment" onchange="calc(); clearXmlImportResult('xmlImportResult4');">
-					<option value="0" selected>-------------------Aucun-------------------</option>
-				</select>
-				<span class="xmlImportResult" id="xmlImportResult4"></span><span class="error" id="error4"></span><br/>
-				
-				<label for="zombie"><img src="images/h_zombie.gif" /> Nombre de zombies : <input type="text" id="zombie" value="0" maxlength="3" onkeyup="calc(); clearXmlImportResult('xmlImportResult5');" /></label>
-				<span class="xmlImportResult" id="xmlImportResult5"></span><span class="error" id="error5"></span><br/>
-				
-				<label for="amenagement"><img src="images/r_jcolle.gif" /> Nombre d'aménagements "classiques" de la case : <input type="text" id="amenagement" value="0" maxlength="5" onkeyup="calc(); clearXmlImportResult('xmlImportResult6');" /></label> 
-				(<img src="images/h_warning.gif" /> décomptez 3 aménagements par jour)<span class="xmlImportResult" id="xmlImportResult6"></span><span class="error" id="error6"></span><br/>
-				
-				<label for="OD"><img src="images/item_wood_plate.gif" /> Nombre d'aménagements par des objets de défense (OD) : <input type="text" id="OD" value="0" maxlength="2" onkeyup="calc(); clearXmlImportResult('xmlImportResult7');" /></label>
-				<span class="xmlImportResult" id="xmlImportResult7"></span><span class="error" id="error7"></span><br/>
-				
-				<label for="cing"><img src="images/r_cmplst.gif" /> Nombre de campings déjà effectués : <input type="text" id="cing" value="0" maxlength="2" onkeyup="calc(); clearXmlImportResult('xmlImportResult8');" /></label>
-				<span class="xmlImportResult" id="xmlImportResult8"></span><span class="error" id="error8"></span><br/>
-				
-				<label for="ceur"><img src="images/r_camp.gif" /> Nombre de campeurs déjà enterrés : <input type="text" id="ceur" value="0" maxlength="2" onkeyup="calc(); clearXmlImportResult('xmlImportResult9');" /></label>
-				<span class="xmlImportResult" id="xmlImportResult9"></span><span class="error" id="error9"></span><br/>
-				
-				<label for="peau"><img src="images/item_smelly_meat.gif" /> Nombre de pelures de peau portées : <input type="text" id="peau" value="0" maxlength="1" onkeyup="calc(); clearXmlImportResult('xmlImportResult10');" /></label>
-				<span class="xmlImportResult" id="xmlImportResult10"></span><span class="error" id="error10"></span><br/>
-				
-				<label for="tente"><img src="images/item_sheet.gif" /> Nombre de toiles de tente portées : <input type="text" id="tente" value="0" maxlength="1" onkeyup="calc(); clearXmlImportResult('xmlImportResult11');" /></label>
-				<span class="xmlImportResult" id="xmlImportResult11"></span><span class="error" id="error11"></span><br/><br/>
-				
-				<b>Cochez si le bonus/malus est actif</b><br/><br/>
-				
-				<input type="checkbox" id="tombe" onchange="calc(); clearXmlImportResult('xmlImportResult12');" /><label for="tombe"><img src="images/small_gather.gif" /> Tombe creusée</label>
-				<span class="xmlImportResult" id="xmlImportResult12"></span><span class="error" id="error12"></span><br/>
-				
-				<input type="checkbox" id="nuit" onchange="calc(); clearXmlImportResult('xmlImportResult13');" /><label for="nuit"><img src="images/r_doutsd.gif" /> Nuit (de 19h à 7h)</label>
-				<span class="xmlImportResult" id="xmlImportResult13"></span><span class="error" id="error13"></span><br/>
-				
-				<span id="bonusEclaireur" style="display: none;"><input type="checkbox" id="furtif" onchange="calc(); clearXmlImportResult('xmlImportResult14');" /><label for="furtif"><img src="images/r_jrangr.gif" /> Mode furtif (si capuche active)</label>
-				<span class="xmlImportResult" id="xmlImportResult14"></span><span class="error" id="error14"></span><br/></span>
-				
-				<input type="checkbox" id="pro" onchange="calc(); clearXmlImportResult('xmlImportResult15');" /><label for="pro"><img src="images/small_camp.gif" /> Campeur pro</label>
-				<span class="xmlImportResult" id="xmlImportResult15"></span><span class="error" id="error15"></span><br/>
-				
-				<input type="checkbox" id="phare" onchange="calc(); clearXmlImportResult('xmlImportResult16');" /><label for="phare"><img src="images/small_lighthouse.gif" /> Phare</label>
-				<span class="xmlImportResult" id="xmlImportResult16"></span><span class="error" id="error16"></span><br/>
-				
-				<input type="checkbox" id="devast" onchange="calc(); clearXmlImportResult('xmlImportResult17');" /><label for="devast"><img src="images/item_out_def_broken.gif" /> Ville dévastée</label>
-				<span class="xmlImportResult" id="xmlImportResult17"></span><span class="error" id="error17"></span><br/><br/>
-				
-				<button type="button" onclick="raz();">RàZ</button><br/>
-			</form>
-			
-			<h3>Résultats</h3>
-			
-			<div>
-				<img src="images/h_arrow.gif" /> Statut de survie : <b id="statut"></b><b id="statut2" style="display: none;" ></b>
-			</div>
-			
-			<div id="blocOpti" style="display: none;" >
-				<img src="images/h_arrow.gif" /> Nbr. aménagements avant "optimal" : <b id="opti"></b>
-			</div>
-			
-			<div id="blocCorrect">
-				<img src="images/h_arrow.gif" /> Nbr. aménagements avant "correct max" : <b id="correct"></b>
-			</div><br/>
-			
-			<div id="blocUrl">
-				<img src="images/h_chat.gif" /> Url de la simulation : <input type="text" id="url" name="url" onclick="this.select()" />
-			</div><br/>
-			
-			<div id="debug">
-				<button type="button" onclick="formSup();">Signaler une erreur</button>
-				<input type="text" style="display : none;" value="" id="pseudo2" />
-			</div>
-			
-			<div></div>			
-</div>
-		
-<div id="pied_de_page">
-	Camping predict est un site d'aide au jeu Hordes de la Motion Twin developpé par <a href="http://twinoid.com/user/19935" target="_blank">Sirios</a> et hébergé par <a href="http://twinoid.com/user/430289" target="_blank">Nadawoo</a>. Version v1.1 (28/01/2018). Le topic de discussion officiel est <a href="http://muxxu.com/tid/forum#!view/61824|thread/22048945" target="_blank">ici</a>. Camping predict n'est pas affilié à la Motion Twin. Certains éléments appartiennent à la Motion Twin.
+    <h2>Prédicteur du statut de survie en camping sur Hordes</h2>
 
-<!--Ancienne version : 14/01/2014--></div>
-		
-		
+    <form action="#" id="data" autocomplete="off">
+
+        <div id="legendImport">
+            <u>Légende</u><br/>
+            <b style="color:#851717;">X</b> : donnée indisponible<br/>
+            <b style="color:#A2B154;">V</b> : donnée chargée avec succès
+        </div>
+
+        <div id="correction">
+            <input type="checkbox" id="s14" onchange="calc();"/><label for="s14"> Correction saison 14</label>
+        </div>
+        <br/>
+
+        <img src="images/r_explor.gif"/> Type de ville :
+        <input type="radio" name="ville" id="re" value="0" checked
+               onchange="calc(); clearXmlImportResult('xmlImportResult1');"/><label for="re">RE</label>
+        <input type="radio" name="ville" id="rne" value="1"
+               onchange="calc(); clearXmlImportResult('xmlImportResult1');"/><label for="rne">RNE</label>
+        <input type="radio" name="ville" id="pande" value="2"
+               onchange="calc(); clearXmlImportResult('xmlImportResult1');"/><label for="pande">Pandémonium</label>
+        <span class="xmlImportResult" id="xmlImportResult1"></span><span class="error" id="error1"></span><br/>
+
+        <img src="images/small_hero.gif"/> Type de métier :
+        <input type="radio" name="metier" id="habitant" value="0" checked
+               onchange="displayOption(); clearXmlImportResult('xmlImportResult2');"/><label for="habitant"><img
+            src="images/item_basic_suit.gif"/>/<img src="images/item_pelle.gif"/>/
+        <img src="images/item_shield.gif"/>/<img src="images/item_tamed_pet.gif"/>/<img
+                src="images/item_keymol.gif"/></label>
+        <input type="radio" name="metier" id="ermite" value="1"
+               onchange="displayOption(); clearXmlImportResult('xmlImportResult2');"/><label for="ermite"><img
+            src="images/item_surv_book.gif"/></label>
+        <input type="radio" name="metier" id="eclaireur" value="2"
+               onchange="displayOption(); clearXmlImportResult('xmlImportResult2');"/><label for="eclaireur"><img
+            src="images/item_vest_on.gif"/></label>
+        <span class="xmlImportResult" id="xmlImportResult2"></span><span class="error" id="error2"></span><br/><br/>
+
+        <label for="km"><img src="images/item_tagger.gif"/> Nombre de km de la ville : <input type="text" id="km"
+                                                                                              value="1" maxlength="2"
+                                                                                              onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');"/></label>
+        <span class="xmlImportResult" id="xmlImportResult3"></span><span class="error" id="error3"></span><br/>
+
+        <label for="batiment"><img src="images/r_digger.gif"/> Type de batiment : </label>
+        <select name="batiment" id="batiment" onchange="calc(); clearXmlImportResult('xmlImportResult4');">
+            <option value="0" selected>-------------------Aucun-------------------</option>
+        </select>
+        <span class="xmlImportResult" id="xmlImportResult4"></span><span class="error" id="error4"></span><br/>
+
+        <label for="zombie"><img src="images/h_zombie.gif"/> Nombre de zombies : <input type="text" id="zombie"
+                                                                                        value="0" maxlength="3"
+                                                                                        onkeyup="calc(); clearXmlImportResult('xmlImportResult5');"/></label>
+        <span class="xmlImportResult" id="xmlImportResult5"></span><span class="error" id="error5"></span><br/>
+
+        <label for="amenagement"><img src="images/r_jcolle.gif"/> Nombre d'aménagements "classiques" de la case : <input
+                type="text" id="amenagement" value="0" maxlength="5"
+                onkeyup="calc(); clearXmlImportResult('xmlImportResult6');"/></label>
+        (<img src="images/h_warning.gif"/> décomptez 3 aménagements par jour)<span class="xmlImportResult"
+                                                                                   id="xmlImportResult6"></span><span
+            class="error" id="error6"></span><br/>
+
+        <label for="OD"><img src="images/item_wood_plate.gif"/> Nombre d'aménagements par des objets de défense (OD) :
+            <input type="text" id="OD" value="0" maxlength="2"
+                   onkeyup="calc(); clearXmlImportResult('xmlImportResult7');"/></label>
+        <span class="xmlImportResult" id="xmlImportResult7"></span><span class="error" id="error7"></span><br/>
+
+        <label for="cing"><img src="images/r_cmplst.gif"/> Nombre de campings déjà effectués : <input type="text"
+                                                                                                      id="cing"
+                                                                                                      value="0"
+                                                                                                      maxlength="2"
+                                                                                                      onkeyup="calc(); clearXmlImportResult('xmlImportResult8');"/></label>
+        <span class="xmlImportResult" id="xmlImportResult8"></span><span class="error" id="error8"></span><br/>
+
+        <label for="ceur"><img src="images/r_camp.gif"/> Nombre de campeurs déjà enterrés : <input type="text" id="ceur"
+                                                                                                   value="0"
+                                                                                                   maxlength="2"
+                                                                                                   onkeyup="calc(); clearXmlImportResult('xmlImportResult9');"/></label>
+        <span class="xmlImportResult" id="xmlImportResult9"></span><span class="error" id="error9"></span><br/>
+
+        <label for="peau"><img src="images/item_smelly_meat.gif"/> Nombre de pelures de peau portées : <input
+                type="text" id="peau" value="0" maxlength="1"
+                onkeyup="calc(); clearXmlImportResult('xmlImportResult10');"/></label>
+        <span class="xmlImportResult" id="xmlImportResult10"></span><span class="error" id="error10"></span><br/>
+
+        <label for="tente"><img src="images/item_sheet.gif"/> Nombre de toiles de tente portées : <input type="text"
+                                                                                                         id="tente"
+                                                                                                         value="0"
+                                                                                                         maxlength="1"
+                                                                                                         onkeyup="calc(); clearXmlImportResult('xmlImportResult11');"/></label>
+        <span class="xmlImportResult" id="xmlImportResult11"></span><span class="error" id="error11"></span><br/><br/>
+
+        <b>Cochez si le bonus/malus est actif</b><br/><br/>
+
+        <input type="checkbox" id="tombe" onchange="calc(); clearXmlImportResult('xmlImportResult12');"/><label
+            for="tombe"><img src="images/small_gather.gif"/> Tombe creusée</label>
+        <span class="xmlImportResult" id="xmlImportResult12"></span><span class="error" id="error12"></span><br/>
+
+        <input type="checkbox" id="nuit" onchange="calc(); clearXmlImportResult('xmlImportResult13');"/><label
+            for="nuit"><img src="images/r_doutsd.gif"/> Nuit (de 19h à 7h)</label>
+        <span class="xmlImportResult" id="xmlImportResult13"></span><span class="error" id="error13"></span><br/>
+
+        <span id="bonusEclaireur" style="display: none;"><input type="checkbox" id="furtif"
+                                                                onchange="calc(); clearXmlImportResult('xmlImportResult14');"/><label
+                for="furtif"><img src="images/r_jrangr.gif"/> Mode furtif (si capuche active)</label>
+				<span class="xmlImportResult" id="xmlImportResult14"></span><span class="error"
+                                                                                  id="error14"></span><br/></span>
+
+        <input type="checkbox" id="pro" onchange="calc(); clearXmlImportResult('xmlImportResult15');"/><label for="pro"><img
+            src="images/small_camp.gif"/> Campeur pro</label>
+        <span class="xmlImportResult" id="xmlImportResult15"></span><span class="error" id="error15"></span><br/>
+
+        <input type="checkbox" id="phare" onchange="calc(); clearXmlImportResult('xmlImportResult16');"/><label
+            for="phare"><img src="images/small_lighthouse.gif"/> Phare</label>
+        <span class="xmlImportResult" id="xmlImportResult16"></span><span class="error" id="error16"></span><br/>
+
+        <input type="checkbox" id="devast" onchange="calc(); clearXmlImportResult('xmlImportResult17');"/><label
+            for="devast"><img src="images/item_out_def_broken.gif"/> Ville dévastée</label>
+        <span class="xmlImportResult" id="xmlImportResult17"></span><span class="error" id="error17"></span><br/><br/>
+
+        <button type="button" onclick="raz();">RàZ</button>
+        <br/>
+    </form>
+
+    <h3>Résultats</h3>
+
+    <div>
+        <img src="images/h_arrow.gif"/> Statut de survie : <b id="statut"></b><b id="statut2"
+                                                                                 style="display: none;"></b>
+    </div>
+
+    <div id="blocOpti" style="display: none;">
+        <img src="images/h_arrow.gif"/> Nbr. aménagements avant "optimal" : <b id="opti"></b>
+    </div>
+
+    <div id="blocCorrect">
+        <img src="images/h_arrow.gif"/> Nbr. aménagements avant "correct max" : <b id="correct"></b>
+    </div>
+    <br/>
+
+    <div id="blocUrl">
+        <img src="images/h_chat.gif"/> Url de la simulation : <input type="text" id="url" name="url"
+                                                                     onclick="this.select()"/>
+    </div>
+    <br/>
+
+    <div id="debug">
+        <button type="button" onclick="formSup();">Signaler une erreur</button>
+        <input type="text" style="display : none;" value="" id="pseudo2"/>
+    </div>
+
+    <div></div>
+</div>
+
+<div id="pied_de_page">
+    Camping predict est un site d'aide au jeu Hordes de la Motion Twin developpé par <a
+        href="http://twinoid.com/user/19935" target="_blank">Sirios</a> et hébergé par <a
+        href="http://twinoid.com/user/430289" target="_blank">Nadawoo</a>. Version v1.1 (28/01/2018). Le topic de
+    discussion officiel est <a href="http://muxxu.com/tid/forum#!view/61824|thread/22048945" target="_blank">ici</a>.
+    Camping predict n'est pas affilié à la Motion Twin. Certains éléments appartiennent à la Motion Twin.
+
+    <!--Ancienne version : 14/01/2014--></div>
+
+
 </body>
 </html>
