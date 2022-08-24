@@ -3,9 +3,9 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Camping predict : Accueil</title>
-<!--    <meta name="description" content="">-->
-<!--    <meta name="keywords" content="">-->
-<!--    <meta name="author" content="">-->
+    <!--    <meta name="description" content="">-->
+    <!--    <meta name="keywords" content="">-->
+    <!--    <meta name="author" content="">-->
     <link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design.css"/>
     <script type="text/javascript" src="javascript/jquery-1.5.1.min.js"></script>
     <script type="text/javascript" src="javascript/javascript.js"></script>
@@ -66,8 +66,9 @@
         <span class="xmlImportResult" id="xmlImportResult2"></span><span class="error" id="error2"></span><br/><br/>
 
         <label for="km"><img src="images/item_tagger.gif" alt=""/> Nombre de km de la ville : <input type="text" id="km"
-                                                                                              value="1" maxlength="2"
-                                                                                              onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');"/></label>
+                                                                                                     value="1"
+                                                                                                     maxlength="2"
+                                                                                                     onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');"/></label>
         <span class="xmlImportResult" id="xmlImportResult3"></span><span class="error" id="error3"></span><br/>
 
         <label for="batiment"><img src="images/r_digger.gif" alt=""/> Type de batiment : </label>
@@ -77,33 +78,36 @@
         <span class="xmlImportResult" id="xmlImportResult4"></span><span class="error" id="error4"></span><br/>
 
         <label for="zombie"><img src="images/h_zombie.gif" alt=""/> Nombre de zombies : <input type="text" id="zombie"
-                                                                                        value="0" maxlength="3"
-                                                                                        onkeyup="calc(); clearXmlImportResult('xmlImportResult5');"/></label>
+                                                                                               value="0" maxlength="3"
+                                                                                               onkeyup="calc(); clearXmlImportResult('xmlImportResult5');"/></label>
         <span class="xmlImportResult" id="xmlImportResult5"></span><span class="error" id="error5"></span><br/>
 
-        <label for="amenagement"><img src="images/r_jcolle.gif" alt=""/> Nombre d'aménagements "classiques" de la case : <input
-                type="text" id="amenagement" value="0" maxlength="5"
-                onkeyup="calc(); clearXmlImportResult('xmlImportResult6');"/></label>
+        <label for="amenagement"><img src="images/r_jcolle.gif" alt=""/> Nombre d'aménagements "classiques" de la case :
+            <input
+                    type="text" id="amenagement" value="0" maxlength="5"
+                    onkeyup="calc(); clearXmlImportResult('xmlImportResult6');"/></label>
         (<img src="images/h_warning.gif" alt=""/> décomptez 3 aménagements par jour)<span class="xmlImportResult"
-                                                                                   id="xmlImportResult6"></span><span
+                                                                                          id="xmlImportResult6"></span><span
             class="error" id="error6"></span><br/>
 
-        <label for="OD"><img src="images/item_wood_plate.gif" alt=""/> Nombre d'aménagements par des objets de défense (OD) :
+        <label for="OD"><img src="images/item_wood_plate.gif" alt=""/> Nombre d'aménagements par des objets de défense
+            (OD) :
             <input type="text" id="OD" value="0" maxlength="2"
                    onkeyup="calc(); clearXmlImportResult('xmlImportResult7');"/></label>
         <span class="xmlImportResult" id="xmlImportResult7"></span><span class="error" id="error7"></span><br/>
 
         <label for="cing"><img src="images/r_cmplst.gif" alt=""/> Nombre de campings déjà effectués : <input type="text"
-                                                                                                      id="cing"
-                                                                                                      value="0"
-                                                                                                      maxlength="2"
-                                                                                                      onkeyup="calc(); clearXmlImportResult('xmlImportResult8');"/></label>
+                                                                                                             id="cing"
+                                                                                                             value="0"
+                                                                                                             maxlength="2"
+                                                                                                             onkeyup="calc(); clearXmlImportResult('xmlImportResult8');"/></label>
         <span class="xmlImportResult" id="xmlImportResult8"></span><span class="error" id="error8"></span><br/>
 
-        <label for="ceur"><img src="images/r_camp.gif" alt=""/> Nombre de campeurs déjà enterrés : <input type="text" id="ceur"
-                                                                                                   value="0"
-                                                                                                   maxlength="2"
-                                                                                                   onkeyup="calc(); clearXmlImportResult('xmlImportResult9');"/></label>
+        <label for="ceur"><img src="images/r_camp.gif" alt=""/> Nombre de campeurs déjà enterrés : <input type="text"
+                                                                                                          id="ceur"
+                                                                                                          value="0"
+                                                                                                          maxlength="2"
+                                                                                                          onkeyup="calc(); clearXmlImportResult('xmlImportResult9');"/></label>
         <span class="xmlImportResult" id="xmlImportResult9"></span><span class="error" id="error9"></span><br/>
 
         <label for="peau"><img src="images/item_smelly_meat.gif" alt=""/> Nombre de pelures de peau portées : <input
@@ -111,11 +115,12 @@
                 onkeyup="calc(); clearXmlImportResult('xmlImportResult10');"/></label>
         <span class="xmlImportResult" id="xmlImportResult10"></span><span class="error" id="error10"></span><br/>
 
-        <label for="tente"><img src="images/item_sheet.gif" alt=""/> Nombre de toiles de tente portées : <input type="text"
-                                                                                                         id="tente"
-                                                                                                         value="0"
-                                                                                                         maxlength="1"
-                                                                                                         onkeyup="calc(); clearXmlImportResult('xmlImportResult11');"/></label>
+        <label for="tente"><img src="images/item_sheet.gif" alt=""/> Nombre de toiles de tente portées : <input
+                type="text"
+                id="tente"
+                value="0"
+                maxlength="1"
+                onkeyup="calc(); clearXmlImportResult('xmlImportResult11');"/></label>
         <span class="xmlImportResult" id="xmlImportResult11"></span><span class="error" id="error11"></span><br/><br/>
 
         <b>Cochez si le bonus/malus est actif</b><br/><br/>
@@ -154,7 +159,7 @@
 
     <div>
         <img src="images/h_arrow.gif" alt=""/> Statut de survie : <b id="statut"></b><b id="statut2"
-                                                                                 style="display: none;"></b>
+                                                                                        style="display: none;"></b>
     </div>
 
     <div id="blocOpti" style="display: none;">
@@ -168,7 +173,7 @@
 
     <div id="blocUrl">
         <img src="images/h_chat.gif" alt=""/> Url de la simulation : <input type="text" id="url" name="url"
-                                                                     onclick="this.select()"/>
+                                                                            onclick="this.select()"/>
     </div>
     <br/>
 

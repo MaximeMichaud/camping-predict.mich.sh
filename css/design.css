@@ -1,237 +1,200 @@
-body
-{
-	background-color: #7E4D2A;
-	width : 1000px;
-	margin : auto;
+body {
+    background-color: #7E4D2A;
+    width: 1000px;
+    margin: auto;
 }
 
-#en_tete
-{
-	text-align: center;
+#en_tete {
+    text-align: center;
 }
 
-#menu
-{
-	background-color: #A57252;
-	border:ridge 2px #F0D79E;
-	width: 140px;
-	padding: 0 5px 5px;
-	float: left;
+#menu {
+    background-color: #A57252;
+    border: ridge 2px #F0D79E;
+    width: 140px;
+    padding: 0 5px 5px;
+    float: left;
 }
 
-#menu h3
-{
-	background-color: #683F24;
-	color: #FCE1A6;
-	margin: 0 -5px;
-	font-weight: normal;
-	padding: 2px 10px;
-	border-bottom: 1px solid black;
+#menu h3 {
+    background-color: #683F24;
+    color: #FCE1A6;
+    margin: 0 -5px;
+    font-weight: normal;
+    padding: 2px 10px;
+    border-bottom: 1px solid black;
 }
 
-#menu ul
-{
-	margin-top : 5px;
-	margin-left : -20px;
-	margin-bottom : 5px;
-	color : #F7DF7B;
+#menu ul {
+    margin-top: 5px;
+    margin-left: -20px;
+    margin-bottom: 5px;
+    color: #F7DF7B;
 }
 
-#joueur
-{
-	padding: 2px 0;
+#joueur {
+    padding: 2px 0;
 }
 
-#joueur div
-{
-	width:130px;
-	text-align: center;
+#joueur div {
+    width: 130px;
+    text-align: center;
 }
 
-#joueur a
-{
-	float:right;
-	margin-right:3px;
+#joueur a {
+    float: right;
+    margin-right: 3px;
 }
 
-#pseudoX
-{
-	max-width: 105px;
-	overflow: hidden;
+#pseudoX {
+    max-width: 105px;
+    overflow: hidden;
 }
 
-#corps
-{
-	background-color: #A57252;
-	border:ridge 2px #F0D79E;
-	padding: 12px;
-	margin-top: 15px;
-	margin-left: 160px;
-	min-height : 79px;
+#corps {
+    background-color: #A57252;
+    border: ridge 2px #F0D79E;
+    padding: 12px;
+    margin-top: 15px;
+    margin-left: 160px;
+    min-height: 79px;
 }
 
-#pied_de_page
-{
-	padding: 12px;
-	text-align: center;
+#pied_de_page {
+    padding: 12px;
+    text-align: center;
 }
 
-#explain
-{
-	padding: 5px;
-	border:ridge 2px #F0D79E;
-	background-color: #5C2B20;
-/*	width: 16px;
-	height: 16px;*/
-	overflow: hidden;
-	color: #F0D79E;
+#explain {
+    padding: 5px;
+    border: ridge 2px #F0D79E;
+    background-color: #5C2B20;
+    /*	width: 16px;
+        height: 16px;*/
+    overflow: hidden;
+    color: #F0D79E;
 }
 
-#identification input[type="text"]
-{
-	background-color: #F0D79E;
+#identification input[type="text"] {
+    background-color: #F0D79E;
 }
 
-#blocUrl input[type="text"]
-{
-	background-color: #F0D79E;
-	width: 647px;
+#blocUrl input[type="text"] {
+    background-color: #F0D79E;
+    width: 647px;
 }
 
-#data input, #simuBatForm input[type="text"]
-{
-	background-color: #F0D79E;
-	width: 30px;
+#data input, #simuBatForm input[type="text"] {
+    background-color: #F0D79E;
+    width: 30px;
 }
 
-#additionalData input, textarea
-{
-	background-color: #F0D79E;
+#additionalData input, textarea {
+    background-color: #F0D79E;
 }
 
-#locationApi
-{
-	font-size: 11px;
+#locationApi {
+    font-size: 11px;
 }
 
-#correction
-{
-	border: 1px dotted black;
-	width: 200px;
+#correction {
+    border: 1px dotted black;
+    width: 200px;
 }
 
-.left
-{
-	float: left;
-	margin-bottom: 10px;
-	
+.left {
+    float: left;
+    margin-bottom: 10px;
+
 }
 
-.right
-{
-	margin-left: 410px;
-	margin-bottom: 10px;
+.right {
+    margin-left: 410px;
+    margin-bottom: 10px;
 }
 
-.text_aide
-{
-	text-align: justify;
-	font-size: 14px;
+.text_aide {
+    text-align: justify;
+    font-size: 14px;
 }
 
-.error
-{
-	color: blue;
-	font-weight: bold;
+.error {
+    color: blue;
+    font-weight: bold;
 }
 
-fieldset
-{
-	border: 1px dotted black;
+fieldset {
+    border: 1px dotted black;
 }
 
-select
-{
-	background-color: #F0D79E;
+select {
+    background-color: #F0D79E;
 }
 
-a
-{
-	color: #F0D79E;
-}
-	
-td
-{
-	width: 40px;
-	text-align: center;
+a {
+    color: #F0D79E;
 }
 
-.expert
-{
-	display: none;
+td {
+    width: 40px;
+    text-align: center;
 }
 
-#simuMoveForm input[type="text"]
-{
-	background-color: #F0D79E;
-	width: 30px;
+.expert {
+    display: none;
 }
 
-#paSource,#etat
-{
-	margin-bottom: 5px;
+#simuMoveForm input[type="text"] {
+    background-color: #F0D79E;
+    width: 30px;
 }
 
-#paSource
-{
-	list-style-type: none;  
-	width: 758px;
-	height: 60px;
+#paSource, #etat {
+    margin-bottom: 5px;
 }
 
-#paSource > li
-{
-	float: left;
-	width: 60px;
-	height: 25px;
-	margin-top: 5px;
-	text-align: center; 
+#paSource {
+    list-style-type: none;
+    width: 758px;
+    height: 60px;
 }
 
-#paSource > .spacer_bar 
-{
-	width: 6px;
+#paSource > li {
+    float: left;
+    width: 60px;
+    height: 25px;
+    margin-top: 5px;
+    text-align: center;
 }
 
-legend
-{
-	border: 1px dotted black;
-	padding: 0 2px;
+#paSource > .spacer_bar {
+    width: 6px;
 }
 
-#etatsI
-{
-	
-	width: 350px;
-	float: left;
-	margin-right: 10px;
+legend {
+    border: 1px dotted black;
+    padding: 0 2px;
 }
 
-#etatsF
-{
-	width: 350px;
+#etatsI {
+
+    width: 350px;
+    float: left;
+    margin-right: 10px;
 }
 
-#legendImport
-{
-	border: 1px dotted black;
-	float: right;
-	padding: 5px 10px;
-	margin-right: 10px;
-	display: none;
+#etatsF {
+    width: 350px;
 }
 
-#image_aide1
-{
-	text-align: center;
+#legendImport {
+    border: 1px dotted black;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 10px;
+    display: none;
+}
+
+#image_aide1 {
+    text-align: center;
 }
