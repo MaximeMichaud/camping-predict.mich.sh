@@ -1,14 +1,15 @@
-﻿<html lang="fr">
+<html lang="fr">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Camping predict : Accueil</title>
     <!--    <meta name="description" content="">-->
     <!--    <meta name="keywords" content="">-->
     <!--    <meta name="author" content="">-->
     <link rel="stylesheet" media="screen" type="text/css" title="Design" href="assets/css/design.css"/>
-    <script type="text/javascript" src="assets/javascript/jquery-1.5.1.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+    <!-- <script type="text/javascript" src="assets/javascript/jquery-1.5.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
     <link rel="icon" type="image/png" href="assets/img/r_cmplst.gif"/>
 </head>
 <body>
@@ -18,7 +19,7 @@
 <div id="menu">
     <div class="element_menu">
         <h3 id="joueur">
-            <div>Joueur</div>
+            Joueur
         </h3>
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -65,10 +66,11 @@
             src="assets/img/item_vest_on.gif" alt=""/></label>
         <span class="xmlImportResult" id="xmlImportResult2"></span><span class="error" id="error2"></span><br/><br/>
 
-        <label for="km"><img src="assets/img/item_tagger.gif" alt=""/> Nombre de km de la ville : <input type="text" id="km"
-                                                                                                            value="1"
-                                                                                                            maxlength="2"
-                                                                                                            onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');"/></label>
+        <label for="km"><img src="assets/img/item_tagger.gif" alt=""/> Nombre de km de la ville : <input type="text"
+                                                                                                         id="km"
+                                                                                                         value="1"
+                                                                                                         maxlength="2"
+                                                                                                         onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');"/></label>
         <span class="xmlImportResult" id="xmlImportResult3"></span><span class="error" id="error3"></span><br/>
 
         <label for="batiment"><img src="assets/img/r_digger.gif" alt=""/> Type de batiment : </label>
@@ -77,37 +79,43 @@
         </select>
         <span class="xmlImportResult" id="xmlImportResult4"></span><span class="error" id="error4"></span><br/>
 
-        <label for="zombie"><img src="assets/img/h_zombie.gif" alt=""/> Nombre de zombies : <input type="text" id="zombie"
-                                                                                                      value="0" maxlength="3"
-                                                                                                      onkeyup="calc(); clearXmlImportResult('xmlImportResult5');"/></label>
+        <label for="zombie"><img src="assets/img/h_zombie.gif" alt=""/> Nombre de zombies : <input type="text"
+                                                                                                   id="zombie"
+                                                                                                   value="0"
+                                                                                                   maxlength="3"
+                                                                                                   onkeyup="calc(); clearXmlImportResult('xmlImportResult5');"/></label>
         <span class="xmlImportResult" id="xmlImportResult5"></span><span class="error" id="error5"></span><br/>
 
-        <label for="amenagement"><img src="assets/img/r_jcolle.gif" alt=""/> Nombre d'aménagements "classiques" de la case :
+        <label for="amenagement"><img src="assets/img/r_jcolle.gif" alt=""/> Nombre d'aménagements "classiques" de la
+            case :
             <input
                     type="text" id="amenagement" value="0" maxlength="5"
                     onkeyup="calc(); clearXmlImportResult('xmlImportResult6');"/></label>
         (<img src="assets/img/h_warning.gif" alt=""/> décomptez 3 aménagements par jour)<span class="xmlImportResult"
-                                                                                                 id="xmlImportResult6"></span><span
+                                                                                              id="xmlImportResult6"></span><span
             class="error" id="error6"></span><br/>
 
-        <label for="OD"><img src="assets/img/item_wood_plate.gif" alt=""/> Nombre d'aménagements par des objets de défense
+        <label for="OD"><img src="assets/img/item_wood_plate.gif" alt=""/> Nombre d'aménagements par des objets de
+            défense
             (OD) :
             <input type="text" id="OD" value="0" maxlength="2"
                    onkeyup="calc(); clearXmlImportResult('xmlImportResult7');"/></label>
         <span class="xmlImportResult" id="xmlImportResult7"></span><span class="error" id="error7"></span><br/>
 
-        <label for="cing"><img src="assets/img/r_cmplst.gif" alt=""/> Nombre de campings déjà effectués : <input type="text"
-                                                                                                                    id="cing"
-                                                                                                                    value="0"
-                                                                                                                    maxlength="2"
-                                                                                                                    onkeyup="calc(); clearXmlImportResult('xmlImportResult8');"/></label>
+        <label for="cing"><img src="assets/img/r_cmplst.gif" alt=""/> Nombre de campings déjà effectués : <input
+                type="text"
+                id="cing"
+                value="0"
+                maxlength="2"
+                onkeyup="calc(); clearXmlImportResult('xmlImportResult8');"/></label>
         <span class="xmlImportResult" id="xmlImportResult8"></span><span class="error" id="error8"></span><br/>
 
-        <label for="ceur"><img src="assets/img/r_camp.gif" alt=""/> Nombre de campeurs déjà enterrés : <input type="text"
-                                                                                                                 id="ceur"
-                                                                                                                 value="0"
-                                                                                                                 maxlength="2"
-                                                                                                                 onkeyup="calc(); clearXmlImportResult('xmlImportResult9');"/></label>
+        <label for="ceur"><img src="assets/img/r_camp.gif" alt=""/> Nombre de campeurs déjà enterrés : <input
+                type="text"
+                id="ceur"
+                value="0"
+                maxlength="2"
+                onkeyup="calc(); clearXmlImportResult('xmlImportResult9');"/></label>
         <span class="xmlImportResult" id="xmlImportResult9"></span><span class="error" id="error9"></span><br/>
 
         <label for="peau"><img src="assets/img/item_smelly_meat.gif" alt=""/> Nombre de pelures de peau portées : <input
@@ -159,7 +167,7 @@
 
     <div>
         <img src="assets/img/h_arrow.gif" alt=""/> Statut de survie : <b id="statut"></b><b id="statut2"
-                                                                                               style="display: none;"></b>
+                                                                                            style="display: none;"></b>
     </div>
 
     <div id="blocOpti" style="display: none;">
@@ -173,7 +181,7 @@
 
     <div id="blocUrl">
         <img src="assets/img/h_chat.gif" alt=""/> Url de la simulation : <input type="text" id="url" name="url"
-                                                                                   onclick="this.select()"/>
+                                                                                onclick="this.select()"/>
     </div>
     <br/>
 
