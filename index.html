@@ -6,10 +6,10 @@
     <!--    <meta name="description" content="">-->
     <!--    <meta name="keywords" content="">-->
     <!--    <meta name="author" content="">-->
-    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="css/design.css"/>
-    <script type="text/javascript" src="javascript/jquery-1.5.1.min.js"></script>
-    <script type="text/javascript" src="javascript/javascript.js"></script>
-    <link rel="icon" type="image/png" href="images/r_cmplst.gif"/>
+    <link rel="stylesheet" media="screen" type="text/css" title="Design" href="assets/css/design.css"/>
+    <script type="text/javascript" src="assets/javascript/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+    <link rel="icon" type="image/png" href="assets/img/r_cmplst.gif"/>
 </head>
 <body>
 <div id="en_tete">
@@ -42,7 +42,7 @@
         </div>
         <br/>
 
-        <img src="images/r_explor.gif" alt=""/> Type de ville :
+        <img src="assets/img/r_explor.gif" alt=""/> Type de ville :
         <input type="radio" name="ville" id="re" value="0" checked
                onchange="calc(); clearXmlImportResult('xmlImportResult1');"/><label for="re">RE</label>
         <input type="radio" name="ville" id="rne" value="1"
@@ -51,71 +51,71 @@
                onchange="calc(); clearXmlImportResult('xmlImportResult1');"/><label for="pande">Pandémonium</label>
         <span class="xmlImportResult" id="xmlImportResult1"></span><span class="error" id="error1"></span><br/>
 
-        <img src="images/small_hero.gif" alt=""/> Type de métier :
+        <img src="assets/img/small_hero.gif" alt=""/> Type de métier :
         <input type="radio" name="metier" id="habitant" value="0" checked
                onchange="displayOption(); clearXmlImportResult('xmlImportResult2');"/><label for="habitant"><img
-            src="images/item_basic_suit.gif" alt=""/>/<img src="images/item_pelle.gif" alt=""/>/
-        <img src="images/item_shield.gif" alt=""/>/<img src="images/item_tamed_pet.gif" alt=""/>/<img
-                src="images/item_keymol.gif" alt=""/></label>
+            src="assets/img/item_basic_suit.gif" alt=""/>/<img src="assets/img/item_pelle.gif" alt=""/>/
+        <img src="assets/img/item_shield.gif" alt=""/>/<img src="assets/img/item_tamed_pet.gif" alt=""/>/<img
+                src="assets/img/item_keymol.gif" alt=""/></label>
         <input type="radio" name="metier" id="ermite" value="1"
                onchange="displayOption(); clearXmlImportResult('xmlImportResult2');"/><label for="ermite"><img
-            src="images/item_surv_book.gif" alt=""/></label>
+            src="assets/img/item_surv_book.gif" alt=""/></label>
         <input type="radio" name="metier" id="eclaireur" value="2"
                onchange="displayOption(); clearXmlImportResult('xmlImportResult2');"/><label for="eclaireur"><img
-            src="images/item_vest_on.gif" alt=""/></label>
+            src="assets/img/item_vest_on.gif" alt=""/></label>
         <span class="xmlImportResult" id="xmlImportResult2"></span><span class="error" id="error2"></span><br/><br/>
 
-        <label for="km"><img src="images/item_tagger.gif" alt=""/> Nombre de km de la ville : <input type="text" id="km"
-                                                                                                     value="1"
-                                                                                                     maxlength="2"
-                                                                                                     onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');"/></label>
+        <label for="km"><img src="assets/img/item_tagger.gif" alt=""/> Nombre de km de la ville : <input type="text" id="km"
+                                                                                                            value="1"
+                                                                                                            maxlength="2"
+                                                                                                            onkeyup="displayBat(); clearXmlImportResult('xmlImportResult3');"/></label>
         <span class="xmlImportResult" id="xmlImportResult3"></span><span class="error" id="error3"></span><br/>
 
-        <label for="batiment"><img src="images/r_digger.gif" alt=""/> Type de batiment : </label>
+        <label for="batiment"><img src="assets/img/r_digger.gif" alt=""/> Type de batiment : </label>
         <select name="batiment" id="batiment" onchange="calc(); clearXmlImportResult('xmlImportResult4');">
             <option value="0" selected>-------------------Aucun-------------------</option>
         </select>
         <span class="xmlImportResult" id="xmlImportResult4"></span><span class="error" id="error4"></span><br/>
 
-        <label for="zombie"><img src="images/h_zombie.gif" alt=""/> Nombre de zombies : <input type="text" id="zombie"
-                                                                                               value="0" maxlength="3"
-                                                                                               onkeyup="calc(); clearXmlImportResult('xmlImportResult5');"/></label>
+        <label for="zombie"><img src="assets/img/h_zombie.gif" alt=""/> Nombre de zombies : <input type="text" id="zombie"
+                                                                                                      value="0" maxlength="3"
+                                                                                                      onkeyup="calc(); clearXmlImportResult('xmlImportResult5');"/></label>
         <span class="xmlImportResult" id="xmlImportResult5"></span><span class="error" id="error5"></span><br/>
 
-        <label for="amenagement"><img src="images/r_jcolle.gif" alt=""/> Nombre d'aménagements "classiques" de la case :
+        <label for="amenagement"><img src="assets/img/r_jcolle.gif" alt=""/> Nombre d'aménagements "classiques" de la case :
             <input
                     type="text" id="amenagement" value="0" maxlength="5"
                     onkeyup="calc(); clearXmlImportResult('xmlImportResult6');"/></label>
-        (<img src="images/h_warning.gif" alt=""/> décomptez 3 aménagements par jour)<span class="xmlImportResult"
-                                                                                          id="xmlImportResult6"></span><span
+        (<img src="assets/img/h_warning.gif" alt=""/> décomptez 3 aménagements par jour)<span class="xmlImportResult"
+                                                                                                 id="xmlImportResult6"></span><span
             class="error" id="error6"></span><br/>
 
-        <label for="OD"><img src="images/item_wood_plate.gif" alt=""/> Nombre d'aménagements par des objets de défense
+        <label for="OD"><img src="assets/img/item_wood_plate.gif" alt=""/> Nombre d'aménagements par des objets de défense
             (OD) :
             <input type="text" id="OD" value="0" maxlength="2"
                    onkeyup="calc(); clearXmlImportResult('xmlImportResult7');"/></label>
         <span class="xmlImportResult" id="xmlImportResult7"></span><span class="error" id="error7"></span><br/>
 
-        <label for="cing"><img src="images/r_cmplst.gif" alt=""/> Nombre de campings déjà effectués : <input type="text"
-                                                                                                             id="cing"
-                                                                                                             value="0"
-                                                                                                             maxlength="2"
-                                                                                                             onkeyup="calc(); clearXmlImportResult('xmlImportResult8');"/></label>
+        <label for="cing"><img src="assets/img/r_cmplst.gif" alt=""/> Nombre de campings déjà effectués : <input type="text"
+                                                                                                                    id="cing"
+                                                                                                                    value="0"
+                                                                                                                    maxlength="2"
+                                                                                                                    onkeyup="calc(); clearXmlImportResult('xmlImportResult8');"/></label>
         <span class="xmlImportResult" id="xmlImportResult8"></span><span class="error" id="error8"></span><br/>
 
-        <label for="ceur"><img src="images/r_camp.gif" alt=""/> Nombre de campeurs déjà enterrés : <input type="text"
-                                                                                                          id="ceur"
-                                                                                                          value="0"
-                                                                                                          maxlength="2"
-                                                                                                          onkeyup="calc(); clearXmlImportResult('xmlImportResult9');"/></label>
+        <label for="ceur"><img src="assets/img/r_camp.gif" alt=""/> Nombre de campeurs déjà enterrés : <input type="text"
+                                                                                                                 id="ceur"
+                                                                                                                 value="0"
+                                                                                                                 maxlength="2"
+                                                                                                                 onkeyup="calc(); clearXmlImportResult('xmlImportResult9');"/></label>
         <span class="xmlImportResult" id="xmlImportResult9"></span><span class="error" id="error9"></span><br/>
 
-        <label for="peau"><img src="images/item_smelly_meat.gif" alt=""/> Nombre de pelures de peau portées : <input
+        <label for="peau"><img src="assets/img/item_smelly_meat.gif" alt=""/> Nombre de pelures de peau portées : <input
                 type="text" id="peau" value="0" maxlength="1"
                 onkeyup="calc(); clearXmlImportResult('xmlImportResult10');"/></label>
         <span class="xmlImportResult" id="xmlImportResult10"></span><span class="error" id="error10"></span><br/>
 
-        <label for="tente"><img src="images/item_sheet.gif" alt=""/> Nombre de toiles de tente portées : <input
+        <label for="tente"><img src="assets/img/item_sheet.gif" alt=""/> Nombre de toiles de tente portées : <input
                 type="text"
                 id="tente"
                 value="0"
@@ -126,29 +126,29 @@
         <b>Cochez si le bonus/malus est actif</b><br/><br/>
 
         <input type="checkbox" id="tombe" onchange="calc(); clearXmlImportResult('xmlImportResult12');"/><label
-            for="tombe"><img src="images/small_gather.gif" alt=""/> Tombe creusée</label>
+            for="tombe"><img src="assets/img/small_gather.gif" alt=""/> Tombe creusée</label>
         <span class="xmlImportResult" id="xmlImportResult12"></span><span class="error" id="error12"></span><br/>
 
         <input type="checkbox" id="nuit" onchange="calc(); clearXmlImportResult('xmlImportResult13');"/><label
-            for="nuit"><img src="images/r_doutsd.gif" alt=""/> Nuit (de 19h à 7h)</label>
+            for="nuit"><img src="assets/img/r_doutsd.gif" alt=""/> Nuit (de 19h à 7h)</label>
         <span class="xmlImportResult" id="xmlImportResult13"></span><span class="error" id="error13"></span><br/>
 
         <span id="bonusEclaireur" style="display: none;"><input type="checkbox" id="furtif"
                                                                 onchange="calc(); clearXmlImportResult('xmlImportResult14');"/><label
-                for="furtif"><img src="images/r_jrangr.gif" alt=""/> Mode furtif (si capuche active)</label>
+                for="furtif"><img src="assets/img/r_jrangr.gif" alt=""/> Mode furtif (si capuche active)</label>
 				<span class="xmlImportResult" id="xmlImportResult14"></span><span class="error"
                                                                                   id="error14"></span><br/></span>
 
         <input type="checkbox" id="pro" onchange="calc(); clearXmlImportResult('xmlImportResult15');"/><label for="pro"><img
-            src="images/small_camp.gif" alt=""/> Campeur pro</label>
+            src="assets/img/small_camp.gif" alt=""/> Campeur pro</label>
         <span class="xmlImportResult" id="xmlImportResult15"></span><span class="error" id="error15"></span><br/>
 
         <input type="checkbox" id="phare" onchange="calc(); clearXmlImportResult('xmlImportResult16');"/><label
-            for="phare"><img src="images/small_lighthouse.gif" alt=""/> Phare</label>
+            for="phare"><img src="assets/img/small_lighthouse.gif" alt=""/> Phare</label>
         <span class="xmlImportResult" id="xmlImportResult16"></span><span class="error" id="error16"></span><br/>
 
         <input type="checkbox" id="devast" onchange="calc(); clearXmlImportResult('xmlImportResult17');"/><label
-            for="devast"><img src="images/item_out_def_broken.gif" alt=""/> Ville dévastée</label>
+            for="devast"><img src="assets/img/item_out_def_broken.gif" alt=""/> Ville dévastée</label>
         <span class="xmlImportResult" id="xmlImportResult17"></span><span class="error" id="error17"></span><br/><br/>
 
         <button type="button" onclick="raz();">RàZ</button>
@@ -158,22 +158,22 @@
     <h3>Résultats</h3>
 
     <div>
-        <img src="images/h_arrow.gif" alt=""/> Statut de survie : <b id="statut"></b><b id="statut2"
-                                                                                        style="display: none;"></b>
+        <img src="assets/img/h_arrow.gif" alt=""/> Statut de survie : <b id="statut"></b><b id="statut2"
+                                                                                               style="display: none;"></b>
     </div>
 
     <div id="blocOpti" style="display: none;">
-        <img src="images/h_arrow.gif" alt=""/> Nbr. aménagements avant "optimal" : <b id="opti"></b>
+        <img src="assets/img/h_arrow.gif" alt=""/> Nbr. aménagements avant "optimal" : <b id="opti"></b>
     </div>
 
     <div id="blocCorrect">
-        <img src="images/h_arrow.gif" alt=""/> Nbr. aménagements avant "correct max" : <b id="correct"></b>
+        <img src="assets/img/h_arrow.gif" alt=""/> Nbr. aménagements avant "correct max" : <b id="correct"></b>
     </div>
     <br/>
 
     <div id="blocUrl">
-        <img src="images/h_chat.gif" alt=""/> Url de la simulation : <input type="text" id="url" name="url"
-                                                                            onclick="this.select()"/>
+        <img src="assets/img/h_chat.gif" alt=""/> Url de la simulation : <input type="text" id="url" name="url"
+                                                                                   onclick="this.select()"/>
     </div>
     <br/>
 
